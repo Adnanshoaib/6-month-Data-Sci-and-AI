@@ -1,8 +1,111 @@
-# Introduction :-
-    # What is Python :-
-       - python is a hogh-level language , easy to learn programming language that widely used in Data-Science.
-       - Python have easy to read & write syntax. Python have large No. of libraries . strong communication supports.
-    # Why pyhton for Data-Sci :-
-       - In data-sci python is used to , it help collect , clean , analyze , visualize , & predict data.
-       - libraries like Pandas , Numpy , Matplotib & Scikit-learn make tasks faster & easier.
- 
+# Introduction of Python:-
+         - python is a high level , easy to learn programming language that is widely used in Data science .
+         - Python have easy to Write & Read Syntax.Python have large no.of labraries.
+         - Strong communication Supports.
+
+# Why Python For Data Sci:-
+         -In Data Science Python is Used to collect,clean,analyze,visualize and help to predict data.
+         -It's used Labraries like 
+  - Pandas
+  - Numpy
+  - Matplotib
+  - Scikit-learn
+
+# Variaables and DataTypes :-
+            - Variables are containers for storing data values.
+            - You don’t need to declare the type; Python automatically understands it.
+            - python variables are case sensitive.
+            - pyhton allow assinging values to multiple variables in a single line.
+
+# EX :-
+     a = 10 
+           a is name of the variable and 10 is value store in x variable.
+
+# Datatype :-
+
+  a =  10  ---> int
+  b = 23.4 ---> float
+  c = "nit" ---> str
+  d = True ---> boolean
+  e = 1+2j ---> complex
+
+# Pyhton-TypeCasting:-
+             -Type Casting in Python refers to the process of converting the data type of a variable from one type to another,
+such as from a string to an integer, a float to an integer, etc.
+
+# Data Structure in pyhton :-
+
+       # Data Type :-
+                -User or Developer define only one value.
+       # Data Structure :-
+                 -User or Developer can define more than one values.
+       # Matrix :-
+              -Tables(rows and columns )
+
+   matrix = collection of data structures .
+   data structure = collection of data types.
+
+#python Data Structure are devided into 2 types :-
+
+                      1) Inbuild DS :- List , Tuples , Set , Dict .
+                      2) User def DS :- Stack, Linkedlist , Heap , Tree , ( normally used by some labraries ).
+
+# Inbuild Data Structure
+1) List :-
+         - List is Growable.
+         - List define with []
+         - Duplicates are allowed.
+         - Multiple datatypes can declare.
+         - List is Mutable (you can change values).
+
+# Methods of List :-
+1) append() :-
+      - It's a build in method in pyhton used to add an item to the end of a list.
+
+2) copy() :-
+    - copy() is a built-in method used to create a shallow copy of a list.
+
+3) Count() :-
+    - count() returns the number of times a specific value appears in a list.
+
+4) pop() :-
+    - pop() removes and returns an element from a list by index; if no index is given, it removes the last item.
+
+5) remove() :-
+    - remove() deletes the first occurrence of a specified value from the list (does not return it).
+
+6) Difference Between pop() and remove():-
+    - pop(index) removes and returns an item by index.
+    - remove(value) deletes the first matching value (does not return it).
+
+7) insert():-
+    - insert(index, value) adds a value at the specified index in the list without replacing existing elements.
+
+8) extned():-
+    -extend() adds each element from another list to the end of the current list.
+
+9) reverse() :-
+    - reverse() reverses the elements of the list in place (modifies the original list).
+
+10) sort() :-
+     - sort() arranges the elements of a list in ascending (default) or descending order.
+
+11) clear() :-
+     - clear() removes all elements from the list, making it an empty list.
+
+12) del listname :-
+     - del deletes the entire list from memory (not just its contents).
+
+13) len() :-
+     - len() returns the total number of items in a list.
+
+
+
+
+
+
+
+
+
+
+
