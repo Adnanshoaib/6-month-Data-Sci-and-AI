@@ -59,45 +59,110 @@ such as from a string to an integer, a float to an integer, etc.
          - List is Mutable (you can change values).
 
 # Methods of List :-
+
 1) append() :-
       - It's a build in method in pyhton used to add an item to the end of a list.
-
 2) copy() :-
     - copy() is a built-in method used to create a shallow copy of a list.
-
 3) Count() :-
     - count() returns the number of times a specific value appears in a list.
-
 4) pop() :-
     - pop() removes and returns an element from a list by index; if no index is given, it removes the last item.
 
 5) remove() :-
     - remove() deletes the first occurrence of a specified value from the list (does not return it).
-
 6) Difference Between pop() and remove():-
     - pop(index) removes and returns an item by index.
     - remove(value) deletes the first matching value (does not return it).
-
 7) insert():-
     - insert(index, value) adds a value at the specified index in the list without replacing existing elements.
-
 8) extned():-
     -extend() adds each element from another list to the end of the current list.
-
 9) reverse() :-
     - reverse() reverses the elements of the list in place (modifies the original list).
 
 10) sort() :-
      - sort() arranges the elements of a list in ascending (default) or descending order.
-
 11) clear() :-
      - clear() removes all elements from the list, making it an empty list.
-
 12) del listname :-
      - del deletes the entire list from memory (not just its contents).
-
 13) len() :-
      - len() returns the total number of items in a list.
+
+2) Tuple :-
+        -Tuple is an ordered collection of elements.
+        -Tuple are immutable.
+        -Once created, you cannot change its values.
+
+            ex----> tup1 = (1,2,3,4,"rehan") # tuple
+
+ # Methods of Tuple :-
+
+      1) count(x)	:-
+            -Counts how many times x appears..
+      2)index(x) :-
+            -Returns the first index where x is located	.
+
+3) Dictionary :-
+        - Dictionary is an unordered collection of key values pairs enclosed with {}.
+        - Dict is Mutable.
+
+  # Methods of Dict :-
+
+       1) keys() :-
+             -Returns a view of all the keys.
+       2) values() :-
+            - Returns a view of all the values.
+       3) update() :-
+            - Updates dictionary with another dictionary or key-value pair.
+       4) pop():-
+           - Removes a key and returns its value.
+       5) clear() :-
+           - clear all dict elements.
+
+
+4) Set :-
+      - set is an unorderd collection of elemnts enclosed in {}.
+      - Duplicates are not allowed in set.
+      - Automatically removes repeated items.
+
+  # Methods of LisSrt :-
+
+    1) add() :- 
+            - add new element.
+    2) remove() :-
+            - remove if found , Error if not found.
+    3) discard() :-
+            - No error if not found.
+    4) union() :-
+            - Combines sets (all unique elements).
+    5) intersection() :-
+            - print Common elements from two sets
+
+   # Superset , Subset , Disjoint :-
+
+    1) issuperset() :-
+            -Checks if a set contains all elements of another set.
+    2) issubset():-
+            - Checks if all elements of one set are present in another.
+    3) isdisjoint() :-
+            - Checks if two sets have no elements in common.
+
+# range() :-
+     - range() is used to generate a sequence of numbers.
+
+- EX ---> list(range(0,10)) 
+- O/P :- [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+- start → (Optional) Starting number (default is 0)
+- stop → (Required) The number at which the range stops (not included)
+- step → (Optional) The increment (default is 1)
+
+* Common Use Cases:-
+- For loops
+- Generating sequences
+- Iterating indexes in lists
 
 
 
