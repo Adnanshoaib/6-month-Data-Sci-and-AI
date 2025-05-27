@@ -40,7 +40,7 @@ such as from a string to an integer, a float to an integer, etc.
        # Data Structure :-
                  -User or Developer can define more than one values.
        # Matrix :-
-              -Tables(rows and columns )
+              -Tables(rows and columns ).
 
    matrix = collection of data structures .
    data structure = collection of data types.
@@ -163,6 +163,15 @@ such as from a string to an integer, a float to an integer, etc.
 - For loops
 - Generating sequences
 - Iterating indexes in lists
+
+Operator 	Description	Example (a = 10, b = 3)
+   +	          Addition         a + b = 13
+   -	       Subtraction     	a - b = 7
+   *	      Multiplication  	a * b = 30
+   /	    Division (float)  	a / b = 3.333
+  //	     Floor Division        a // b = 3
+  %	  Modulus (remainder)	a % b = 1
+  **	    Exponentiation       a ** b = 1000
 
 
 
