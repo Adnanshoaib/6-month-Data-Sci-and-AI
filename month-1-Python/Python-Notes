@@ -164,14 +164,58 @@ such as from a string to an integer, a float to an integer, etc.
 - Generating sequences
 - Iterating indexes in lists
 
-Operator 	Description	Example (a = 10, b = 3)
-   +	          Addition         a + b = 13
-   -	       Subtraction     	a - b = 7
-   *	      Multiplication  	a * b = 30
-   /	    Division (float)  	a / b = 3.333
-  //	     Floor Division        a // b = 3
-  %	  Modulus (remainder)	a % b = 1
-  **	    Exponentiation       a ** b = 1000
+# Operators :-
+
+1) Arithmetic Operators :-
+       - Arithmetic operator used for mathematical operations.
+    # Example (a = 10, b = 3)
+
+| Operator | Description         | Example (`a = 10`, `b = 3`) |
+| -------- | ------------------- | --------------------------- |
+| `+`      | Addition            | `a + b = 13`                |
+| `-`      | Subtraction         | `a - b = 7`                 |
+| `*`      | Multiplication      | `a * b = 30`                |
+| `/`      | Division (float)    | `a / b = 3.333`             |
+| `//`     | Floor Division      | `a // b = 3`                |
+| `%`      | Modulus (remainder) | `a % b = 1`                 |
+| `**`     | Exponentiation      | `a ** b = 1000`             |
+
+
+2) Assignment Operators :-
+        - Assignment Operators used to assign values.
+
+| Operator           | Example                  | Meaning       |
+| ------------------ | ------------------------ | ------------- |
+| `=`                | `a = 5`                  | Assign 5 to a |
+| `+=`               | `a += 1`                 | `a = a + 1`   |
+| `-=`               | `a -= 2`                 | `a = a - 2`   |
+| `*=`               | `a *= 3`                 | `a = a * 3`   |
+| `/=`               | `a /= 2`                 | `a = a / 2`   |
+| `//=`, `%=`, `**=` | Floor, Mod, Power assign |               |
+
+3) unary Operators :-
+         - Unary operators are operators that operate on only one operand.
+         - They are used to modify the sign, value, or truth value of a single variable or expression.
+
+| Operator | Name                         | Description                     | Example              |
+| -------- | ---------------------------- | ------------------------------- | -------------------- |
+| `+`      | Unary Plus                   | Returns the value as is         | `+5` → `5`           |
+| `-`      | Unary Minus                  | Negates the value               | `-5` → `-5`          |
+| `not`    | Logical NOT                  | Reverses the Boolean value      | `not True` → `False` |
+| `~`      | Bitwise NOT (1’s complement) | Inverts each bit (for integers) | `~5` → `-6`          |
+
+2) Relational Operators :-
+        - Used to compare two values; result is True or False.
+
+| Operator | Description      | Example (`a = 5`, `b = 3`) |
+| -------- | ---------------- | -------------------------- |
+| `==`     | Equal            | `a == b` → `False`         |
+| `!=`     | Not equal        | `a != b` → `True`          |
+| `>`      | Greater than     | `a > b` → `True`           |
+| `<`      | Less than        | `a < b` → `False`          |
+| `>=`     | Greater or equal | `a >= 5` → `True`          |
+| `<=`     | Less or equal    | `a <= 3` → `False`         |
+
 
 
 
