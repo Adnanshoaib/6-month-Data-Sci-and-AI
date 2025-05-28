@@ -165,60 +165,93 @@ such as from a string to an integer, a float to an integer, etc.
 - Iterating indexes in lists
 
 # Operators :-
+    # Operator: A symbol that performs an operation (like +, -, *, etc.).
+    # Operand: The value or variable the operator works on.
+# Types of operators:-
 
 1) Arithmetic Operators :-
        - Arithmetic operator used for mathematical operations.
     # Example (a = 10, b = 3)
 
-| Operator | Description         | Example (`a = 10`, `b = 3`) |
-| -------- | ------------------- | --------------------------- |
-| `+`      | Addition            | `a + b = 13`                |
-| `-`      | Subtraction         | `a - b = 7`                 |
-| `*`      | Multiplication      | `a * b = 30`                |
-| `/`      | Division (float)    | `a / b = 3.333`             |
-| `//`     | Floor Division      | `a // b = 3`                |
-| `%`      | Modulus (remainder) | `a % b = 1`                 |
-| `**`     | Exponentiation      | `a ** b = 1000`             |
-
+Operator	  Description	        Example
+   +	  Addition	       a + b = 13
+   -	  Subtraction	       a - b = 7
+   *	  Multiplication	       a * b = 30
+   /	  Division (float)       a / b = 3.333
+  //	  Floor Division	       a // b = 3
+  %	  Modulus (remainder)    a % b = 1
+  **	  Exponentiation	       a ** b = 1000
 
 2) Assignment Operators :-
         - Assignment Operators used to assign values.
 
-| Operator           | Example                  | Meaning       |
-| ------------------ | ------------------------ | ------------- |
-| `=`                | `a = 5`                  | Assign 5 to a |
-| `+=`               | `a += 1`                 | `a = a + 1`   |
-| `-=`               | `a -= 2`                 | `a = a - 2`   |
-| `*=`               | `a *= 3`                 | `a = a * 3`   |
-| `/=`               | `a /= 2`                 | `a = a / 2`   |
-| `//=`, `%=`, `**=` | Floor, Mod, Power assign |               |
+Operator        Name	          Example	     Meaning
+  =	Assignment	         x = 5	    Assign 5 to x
+  +=	Add and Assign	         x += 3	    x = x + 3
+  -=	Subtract and Assign	x -= 2	    x = x - 2
+  *=	Multiply and Assign	x *= 4	    x = x * 4
+  /=	Divide and Assign  	x /= 2	    x = x / 2
+  //=	Floor Divide and Assign	x //= 2	    x = x // 2
+  %=	Modulus and Assign	x %= 2	    x = x % 2
+  **=	Exponentiate and Assign	x **= 2	    x = x ** 2
 
 3) unary Operators :-
          - Unary operators are operators that operate on only one operand.
          - They are used to modify the sign, value, or truth value of a single variable or expression.
 
-| Operator | Name                         | Description                     | Example              |
-| -------- | ---------------------------- | ------------------------------- | -------------------- |
-| `+`      | Unary Plus                   | Returns the value as is         | `+5` → `5`           |
-| `-`      | Unary Minus                  | Negates the value               | `-5` → `-5`          |
-| `not`    | Logical NOT                  | Reverses the Boolean value      | `not True` → `False` |
-| `~`      | Bitwise NOT (1’s complement) | Inverts each bit (for integers) | `~5` → `-6`          |
-
-2) Relational Operators :-
-        - Used to compare two values; result is True or False.
-
-| Operator | Description      | Example (`a = 5`, `b = 3`) |
-| -------- | ---------------- | -------------------------- |
-| `==`     | Equal            | `a == b` → `False`         |
-| `!=`     | Not equal        | `a != b` → `True`          |
-| `>`      | Greater than     | `a > b` → `True`           |
-| `<`      | Less than        | `a < b` → `False`          |
-| `>=`     | Greater or equal | `a >= 5` → `True`          |
-| `<=`     | Less or equal    | `a <= 3` → `False`         |
+Operator    Name	                Description	              Example
+  +	Unary Plus	Returns the value unchanged	     +5 → 5
+  -	Unary Minus	Negates the value (makes it negative)    -5 → -5
 
 
+4) Relational Operators :-
+        - Relational Operators used to compare two values; result is True or False.
+      # Example (a = 5, b = 3)
+
+Operator       Name	        Example
+  ==	   Equal	              a == b → False
+  !=	   Not equal	     a != b → True
+  >	   Greater than	     a > b → True
+  <	   Less than	     a < b → False
+  >=	   Greater or equal    a >= 5 → True
+  <=	   Less or equal	     a <= 3 → False
+
+5) Logical opertors :-
+         - Logical opertors return True or False based on the logic.
+
+Operator	   Name	                       Description	                                 Example
+  and	Logical AND	Returns True only if both conditions are True	True and False → False
+  or	Logical OR	Returns True if at least one condition is True	True or False → True
+  not	Logical NOT	Reverses the Boolean value                   	not True → False
 
 
+#  Number System Conversion :-
+           - Python provides built-in functions to convert numbers between different number systems.
+           - Number system conversion means changing a number from one system to another, like from Decimal to Binary, Octal, or Hexadecimal.
+
+1) Binary :- 
+      - Base 2 (0 , 1), Used in computer.
+2) Octal :-
+       - Base 28 (0 , 7),used in low-level computing.
+3) Decimal :-
+       - Base 2 (0 , 9), our regular number.
+4) Hexadecimal :-
+       – Base 16 (0–9, A–F), compact form for binary.
+
+# Built-in functions to convert between these systems:-
+
+- bin() – Converts a decimal to binary.
+- oct() – Converts a decimal to octal.
+- hex() – Converts a decimal to hexadecimal.
+- int() – Converts from other systems to decimal.
+
+# Swap Variables in python :-
+- In Python, swapping values between two variables is very easy and doesn’t need a third variable.
+- ex :- a, b = b, a
+
+# Introduce id() :-
+- The id() function returns the unique memory address (identity) of an object in Python.
+- ex :- id(object) 
 
 
 
