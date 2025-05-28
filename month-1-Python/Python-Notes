@@ -121,7 +121,6 @@ such as from a string to an integer, a float to an integer, etc.
        5) clear() :-
            - clear all dict elements.
 
-
 4) Set :-
       - set is an unorderd collection of elemnts enclosed in {}.
       - Duplicates are not allowed in set.
