@@ -260,7 +260,24 @@ Operator	   Name	                       Description	                            
    - math.floor(2.9) → 2  --> Round down to nearest integer
    - math.ceil(2.1) → 3  -->  Round up to nearest integer
    - math.pi  --> π constant (~3.1416)
- 
+
+# Bit wisw Operators :-
+       - Bitwise operators work on the binary (bit-level) representation of integers.
+       - They are used to perform bit-by-bit operations.
+        (a = 5, b = 3)
+
+Operator	Name	         Description	                            Example 
+&	AND	         1 if both bits are 1	                  a & b → 1
+`	OR	         1 if at least one bit is 1	                  a | b → 7               
+^	XOR	         1 if bits are different	                  a ^ b → 6
+~	complement	Inverts all bits (1’s complement)	         ~a → -6
+<<	Left Shift	Shifts bits left (adds 0s on the right)	a << 1 → 10
+>>	Right Shift	Shifts bits right (drops bits on the right)	a >> 1 → 2
+
+
+
+
+
 
 
 
