@@ -268,7 +268,7 @@ Operator	   Name	                       Description	                            
 
 Operator	Name	         Description	                            Example 
 &	AND	         1 if both bits are 1	                  a & b → 1
-`	OR	         1 if at least one bit is 1	                  a | b → 7               
+|	OR	         1 if at least one bit is 1	                  a | b → 7               
 ^	XOR	         1 if bits are different	                  a ^ b → 6
 ~	complement	Inverts all bits (1’s complement)	         ~a → -6
 <<	Left Shift	Shifts bits left (adds 0s on the right)	a << 1 → 10
