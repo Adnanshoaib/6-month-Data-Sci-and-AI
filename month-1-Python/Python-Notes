@@ -274,6 +274,41 @@ Operator	Name	         Description	                            Example
 <<	Left Shift	Shifts bits left (adds 0s on the right)	a << 1 → 10
 >>	Right Shift	Shifts bits right (drops bits on the right)	a >> 1 → 2
 
+# String :-
+      - A string is a sequence of characters enclosed in quotes (' ', " ", or ''' ''').
+      - Strings are immutable (cannot be changed after creation).
+ # Ex :-
+    - name = "adnan"
+    - message = """This is
+      a multi-line string."""
+
+# Escape characters :-
+  -  \'   --> Single quote
+  -  \"   --> Double quote
+  -  \n   --> New line
+  -  \t   --> Tab
+  -  \\   --> Backslash
+
+# Raw string :-
+    - A raw string entirely ignores all escape characters and prints any backslash that appears in the string.
+
+# Str Methods :-
+   1) upper() :- Converts to uppercase.
+   2) lower() :- Converts to lowercase.
+   3) title() :- Capitalizes first letter of each word.
+   4) strip() :- Removes leading/trailing spaces.
+   5) replace() :- Replaces part of the string.
+   6) split() :- Splits string into a list.
+   7) join() :- Joins list elements into a string.
+   8) count() :- Counts number of occurrences.
+   9) startswith() :- Checks if string starts with substring.
+   10) endswith() :- Checks if string ends with substring.
+   11) isalpha() :- True if all characters are letters.
+   12) find() :- Finds first index of substring.
+   13) rfind() :- Finds last index of substring.
+
+
+
 
 
 
