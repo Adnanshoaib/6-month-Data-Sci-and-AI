@@ -307,6 +307,27 @@ Operator	Name	         Description	                            Example
    12) find() :- Finds first index of substring.
    13) rfind() :- Finds last index of substring.
 
+# Intro to NumPy :-
+     - NumPy (Numerical Python) is a powerful Python library.
+     - Creating and manipulating arrays.
+     - Performing mathematical, statistical, and linear algebra operations efficiently.
+
+# Importing NumPy :-
+    - ( import numpy as np ).
+
+# NumPy Methods :-
+ 1) np.arange() :- Creates arrays with regularly spaced values.
+ 2) np.zeros() :- Creates an array filled with 0s.
+ 3) np.ones() :- Creates an array filled with 1s.
+ 4) np.random.rand() :- Random floats.
+ 5) np.random.randint() :- Random integer.
+
+
+
+
+
+
+
 
 
 
