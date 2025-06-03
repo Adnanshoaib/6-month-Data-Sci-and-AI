@@ -319,8 +319,60 @@ Operator	Name	         Description	                            Example
  1) np.arange() :- Creates arrays with regularly spaced values.
  2) np.zeros() :- Creates an array filled with 0s.
  3) np.ones() :- Creates an array filled with 1s.
- 4) np.random.rand() :- Random floats.
- 5) np.random.randint() :- Random integer.
+ 4) reshape() :- Changes the shape of an array without changing its data.
+ 5) np.full() :- Create an array with a specific value.
+ 6) flatten() :- Converts a 2D array into 1D.
+ 7) indexing :- arr[0, 1] Element at row 0, column 1
+ 8) Sciling :- arr[:, 0]  All rows, column 0
+                          arr[1:, 1:] # From row 1, col 1 onward
+
+# Boolean Masking :-
+        - Boolean masking is a way to filter arrays using conditions. It returns only the elements that satisfy the condition.
+  Ex :-
+       arr = np.array([10, 20, 30])
+       arr[arr > 15]  # → [20 30]
+
+# Arithmetic Operations in NumPy :-
+      - NumPy allows you to perform element-wise arithmetic directly on arrays — this means operations are applied to each element automatically.
+  Ex :- 
+  arr1 + arr2 :- Element-wise addition
+  arr1 - arr2 :- Element-wise subtraction
+  arr1 * arr2 :- Element-wise multiplication
+  arr1 / arr2 :- Element-wise division
+
+#  Random in NumPy :-
+        - NumPy provides powerful functions to generate random numbers for simulations, testing, and machine learning.
+
+ 1) np.random.rand() :-
+            - Generates random float values between 0 and 1.
+            - Shape can be 1D, 2D, etc.
+  Ex :-
+      np.random.rand(2, 3)
+     # Output:
+        [[0.12 0.56 0.90]
+        [0.22 0.45 0.76]]
+ 2) np.random.randint() :-
+             - Returns random integers from a specified range.
+  Ex :-
+       np.random.randint(1, 10, 5)
+       # Output: 
+            [5 8 1 9 3] → Random integers from 1 to 9
+
+ 3) np.random.choice() :-
+             - Randomly picks values from a list or array.
+  Ex :-
+       arr = [10, 20, 30, 40]
+       np.random.choice(arr,2)
+       # Output:
+              [20 40]  → (Randomly picked values)
+
+
+
+
+
+
+
+
 
 
 
