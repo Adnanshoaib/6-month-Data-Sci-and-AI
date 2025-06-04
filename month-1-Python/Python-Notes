@@ -366,6 +366,73 @@ Operator	Name	         Description	                            Example
        # Output:
               [20 40]  → (Randomly picked values)
 
+# Axis in NumPy :-
+
+      - In NumPy, axis defines the direction along which operations like sum(), mean(), etc., are performed on arrays.
+      - Axis 0 (vertical) → operates column-wise.
+      - Axis 1 (horizontal) → operates row-wise.
+# Ex :-
+      arr = np.array([[1, 2, 3],
+                [4, 5, 6]])
+      # Sum :- np.sum(arr, axis=0)
+         O/p :- [5 7 9] → sum column-wise
+      # Sum :- np.sum(arr, axis=1)
+         O/p :-  [6 15]  → sum row-wise
+      # Mean :-
+        np.mean(arr, axis=0) →  [2.5 3.5 4.5]
+        np.mean(arr, axis=1) →  [2.0 5.0]
+
+# Sort :-
+     - Sorts the array but returns a new sorted array (doesn’t change original).
+     - Works row-wise or column-wise using axis.
+# Ex :-
+arr = np.array([[3, 1, 2],
+               [6, 4, 5]])
+
+# Sort each row :- np.sort(arr, axis=1)
+      O/p:- [[1 2 3]
+            [4 5 6]]
+# Sort each column :- np.sort(arr, axis=0)
+     O/p:- [3 1 2] 
+           [6 4 5]
+
+# delete :-
+
+     - Deletes rows or columns from an array.
+     - Syntax :- np.delete(array, index, axis).
+
+# Statistical Operations in NumPy :-
+
+            - NumPy makes it easy to perform basic statistical calculations on arrays.
+    1) mean() → Average value :-
+            arr = np.array([10, 20, 30, 40])
+            np.mean(arr)   O/p :- 25.0
+    2) median() → Middle value:-
+            arr = np.array([10, 30, 20])
+            np.median(arr)   O/p :- 20.0
+    3) std() → Standard deviation :-
+           -  Measures the spread of data from the mean.
+           arr = np.array([1, 2, 3, 4])
+           np.std(arr)   O/p :- 1.118...
+    4) min() and max() :-
+           np.min(arr)  O/p :- 1  
+           np.max(arr)  O/p :- 4
+    5) sum() :-
+           np.sum(arr)  O/p :- 10  
+
+# Reverse an Array in NumPy :-
+        - np.flip() is used to reverse elements in a NumPy array.
+        - It can reverse the whole array or along a specific axis.
+
+# Ex :-
+           arr = np.array([1, 2, 3, 4, 5])
+           np.flip(arr)
+           O/p :- [5 4 3 2 1]
+
+
+
+
+
 
 
 
