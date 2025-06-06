@@ -429,6 +429,54 @@ arr = np.array([[3, 1, 2],
            np.flip(arr)
            O/p :- [5 4 3 2 1]
 
+# Matplotlib in Python :-
+      - Matplotlib is a data visualization library in Python.
+      - It is used to create static, interactive, and animated plots and charts.
+      
+# Importing Matplotlib :-
+        ( import matplotlib.pyplot as plt ).
+   - matplotlib is the library.
+   - pyplot is a module inside it that provides functions to draw plots.
+
+#  Why Use Matplotlib :-
+       - Visualizes data clearly (e.g., line charts, bar graphs, pie charts).
+       - Helps in data analysis and comparison.
+
+# Where Matplotlib is Used :-
+
+       1) Data Visualization :-
+                - Create graphs like line plots, bar charts, pie charts, etc.
+                - Turn raw data into visual stories.
+       2) Exploratory Data Analysis (EDA) :-
+                - Helps explore datasets.
+                - Identify patterns, trends, and outliers. 
+       3) Machine Learning & Deep Learning :-
+                - Plot model accuracy, loss curves during training.
+                - Compare model predictions visually.
+       4) Reports & Dashboards :-
+                - Add visuals in Jupyter Notebooks or PDF reports.
+                - Useful for presenting results clearly.
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
 
 
 
