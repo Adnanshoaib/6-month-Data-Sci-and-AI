@@ -457,6 +457,34 @@ arr = np.array([[3, 1, 2],
                 - Add visuals in Jupyter Notebooks or PDF reports.
                 - Useful for presenting results clearly.
 
+#  What is a CPU :- 
+
+        - The CPU (Central Processing Unit) is the "brain" of a computer.
+        - It is responsible for executing instructions, processing data, and controlling all operations of the computer.
+#  Full Form: Central Processing Unit
+#  Nicknames: Brain of Computer, Processor, Microprocessor
+
+# Main Functions of CPU :-
+      - The CPU performs three core functions :-
+           1. Fetch – It gets instructions from memory (RAM).
+           2. Decode – It understands (decodes) what the instruction is asking for.
+           3. Execute – It performs the instruction (like a calculation, or moving data).
+
+# Modern CPU Features :-
+
+- Multi-core Processing
+- Hyper-threading
+- Power Efficiency
+- Integrated Graphics (iGPU)
+- Thermal Management
+    
+
+
+
+
+
+
+
 
  
 
