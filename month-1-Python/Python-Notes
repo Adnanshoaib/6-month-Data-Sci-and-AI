@@ -478,6 +478,9 @@ arr = np.array([[3, 1, 2],
 - Integrated Graphics (iGPU)
 - Thermal Management
     
+What are Conditional Statements?
+
+Conditional statements are used to control the flow of a program. They allow your program to make decisions and execute certain code blocks only when specific conditions are true
 
 
 
