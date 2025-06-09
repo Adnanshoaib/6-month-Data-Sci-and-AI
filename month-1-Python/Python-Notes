@@ -478,9 +478,17 @@ arr = np.array([[3, 1, 2],
 - Integrated Graphics (iGPU)
 - Thermal Management
     
-What are Conditional Statements?
+# Intro to Pandas :-
+          - Pandas is a powerful and widely-used open-source Python library for data manipulation, analysis, and cleaning.
+          - It is built on top of NumPy.
+          - It makes working with structured data like 
+                   - Excel
+                   - CSV 
+                   - databases
+           - fast, flexible, and easy.
 
-Conditional statements are used to control the flow of a program. They allow your program to make decisions and execute certain code blocks only when specific conditions are true
+
+
 
 
 
