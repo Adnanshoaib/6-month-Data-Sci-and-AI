@@ -487,62 +487,18 @@ arr = np.array([[3, 1, 2],
                    - databases
            - fast, flexible, and easy.
 
+# Key DS in Pandas :-
+     - Series → 1D labeled array (like a column)
+     - DataFrame → 2D labeled table (like an Excel sheet)
 
-
-
-
-
-
-
-
-
-
- 
-
- 
-
- 
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Use Case :- 
+    - Data Cleaning --> ( Handling missing values, renaming columns, etc )
+    - Data Analysis --> ( Summarizing data, grouping, statistics )
+    - Data Visualization (with matplotlib) --> ( Plotting trends using .plot() )
+    - Data Transformation --> ( Changing formats, types, structure )
+    - Data Merging & Joining --> ( Combining datasets )
+    - File I/O --> ( Reading and writing data (CSV, Excel, JSON, SQL )
+    - Time Series Analysis	--> ( Date-time indexed data )
 
 
 
