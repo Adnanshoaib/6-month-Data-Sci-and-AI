@@ -500,6 +500,34 @@ arr = np.array([[3, 1, 2],
     - File I/O --> ( Reading and writing data (CSV, Excel, JSON, SQL )
     - Time Series Analysis	--> ( Date-time indexed data )
 
+# Pandas Operations :- 
+
+    1) View Data :-
+         df.head() ==> First 5 rows
+         df.tail(3) ==> Last 3 rows
+         df.shape ==> (rows, columns)
+         df.columns  ==> List of column names
+         df.info() ==> Summary: nulls, datatypes
+         df.describe() ==> Summary stats (mean, std, min, etc.)
+
+    2) Select Data :-
+         df['Age'] ==> Single column (Series)
+         df[['Name', 'Age']] ==> Multiple column
+
+    3) Handle Missing Valuesn :-
+         df.isnull().sum() ==> Count of nulls
+         df.fillna(0) ==> Replace nulls
+         df['City'].fillna(df['City'].mode()[0]) ==> Fill with mode
+
+     4) Rename or Drop Columns :-
+         df.rename(columns={'Old': 'New'}, inplace=True)
+         df.drop('UnwantedColumn', axis=1, inplace=True)
+
+-- similarly it has many functions.. 
+
+
+          
+
 
 
 
