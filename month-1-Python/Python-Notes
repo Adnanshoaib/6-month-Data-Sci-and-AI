@@ -208,7 +208,7 @@ Operator    Name	                Description	              Example
       # Example (a = 5, b = 3)
 
 Operator       Name	        Example
-  ==	   Equal	              a == b → False
+  ==	   Equal	          a == b → False
   !=	   Not equal	     a != b → True
   >	   Greater than	     a > b → True
   <	   Less than	     a < b → False
@@ -524,6 +524,30 @@ arr = np.array([[3, 1, 2],
          df.drop('UnwantedColumn', axis=1, inplace=True)
 
 -- similarly it has many functions.. 
+
+# EDA :-
+
+     - EDA stand for "Exploratory Data Analysis"..
+     - Exploratory Data Analysis (EDA) is the process of understanding the data — its structure, patterns, outliers, missing values, relationships, and more.
+
+# Goals of EDA :-
+- Understand the shape, size, and structure of your data.
+- Detect missing values, outliers, and errors.
+- Explore relationships between variables (correlation, dependency).
+- Guide feature selection and feature engineering.
+- Prepare data for modeling
+
+# EDA Techniques :- ( Future Engineering Technique )
+1) Variable Identification.
+2) Univariate Analysis.
+3) Bivariate Analysis.
+4) Outlier Detection.
+5) Missing Value Treatment.
+6) Variable Transformation.
+7) Variable Creation.
+
+- To convert Raw Data --> into clean data the process called datacleaning or data cleansing.
+
 
 
           
