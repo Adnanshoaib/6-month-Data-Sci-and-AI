@@ -19,3 +19,6 @@ Just like a sheet in Excel, it's where we store and query real information.
 # What is a Field..?
 A field is a column in a table.
 It stores a specific type of data for each record (row).
+# What is a Record (Row)?
+A record is a row in a table — also called an entry.
+It contains all the field values for one item/person.
