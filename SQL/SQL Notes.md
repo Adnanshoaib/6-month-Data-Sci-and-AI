@@ -1,4 +1,4 @@
-# What is SQL? 
+# What is SQL..? 
 SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving data 
 stored in relational database. 
 SQL is the standard language for Relation Database System. All relational database management systems like 
@@ -16,3 +16,6 @@ Schemas help manage and group related objects.
 #  Tables
 A collection of rows and columns that hold actual data.
 Just like a sheet in Excel, it's where we store and query real information.
+# What is a Field..?
+A field is a column in a table.
+It stores a specific type of data for each record (row).
