@@ -1,0 +1,281 @@
+# CREATE DATABASE :-
+
+      -The CREATE DATABASE command is used to make a new DATABASE.
+
+  # Syntax :-
+        CREATE DATABASE databasename;
+
+   mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| adnan              |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> create database demo;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| adnan              |
+| demo               |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+6 rows in set (0.00 sec)
+
+ - demo database is added ....
+
+# CREATE TABLE :-
+
+     -The CREATE TABLE command is used to make a new table in the database.
+
+    # Syntax :-
+             CREATE TABLE tablename ( column1 datatype, column2 datatype );
+
+
+mysql> create table student(ID int primary key,
+    -> NAME varchar(30),
+    -> MARKS int, ADDRESS varchar(50));
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| ID      | int         | NO   | PRI | NULL    |       |
+| NAME    | varchar(30) | YES  |     | NULL    |       |
+| MARKS   | int         | YES  |     | NULL    |       |
+| ADDRESS | varchar(50) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+# INSERT :-
+
+   - The INSERT INTO command is used to insert new records (rows) into the table.
+
+    # Syntax :-
+            INSERT INTO tablename (column1, column2) VALUES (value1, value2)
+
+
+* Single Row Insert :- 
+
+mysql> insert into student (ID,NAME,MARKS,ADDRESS) values (101,'Adnan',85,'hyd');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into student values  (102,'Sonu',80,'ban');
+Query OK, 1 row affected (0.01 sec)
+
+* Multiple Row Insert :- 
+
+ mysql> insert into student values  (103,'Rehan',80,'hyd'), (104,'Ayaan',85,'ban'), (105,'Shoaib',90,'hyd');
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+# SELECT :-
+
+     - The SELECT command is used to fetch or view data from a table.
+
+  # Syntax :-
+          select * from databasename;
+
+mysql> select * from student;
++-----+--------+-------+---------+
+| ID  | NAME   | MARKS | ADDRESS |
++-----+--------+-------+---------+
+| 101 | Adnan  |    85 | hyd     |
+| 102 | Sonu   |    80 | ban     |
+| 103 | Rehan  |    80 | hyd     |
+| 104 | Ayaan  |    85 | ban     |
+| 105 | Shoaib |    90 | hyd     |
++-----+--------+-------+---------+
+5 rows in set (0.00 sec)
+
+# WHERE Clause :-
+
+       - The WHERE clause is used in SQL to filter rows from a table.
+       - It helps you get only the rows that match a specific condition.
+  
+  # Syntax :-
+         SELECT columns FROM tablename WHERE condition;
+
+mysql> select * from student where ID = 101;
++-----+-------+-------+---------+
+| ID  | NAME  | MARKS | ADDRESS |
++-----+-------+-------+---------+
+| 101 | Adnan |    85 | hyd     |
++-----+-------+-------+---------+
+1 row in set (0.00 sec)
+
+mysql> select * from student where MARKS > 85;
++-----+--------+-------+---------+
+| ID  | NAME   | MARKS | ADDRESS |
++-----+--------+-------+---------+
+| 105 | Shoaib |    90 | hyd     |
++-----+--------+-------+---------+
+1 row in set (0.00 sec)
+
+mysql> select * from student where MARKS < 85;
++-----+-------+-------+---------+
+| ID  | NAME  | MARKS | ADDRESS |
++-----+-------+-------+---------+
+| 102 | Sonu  |    80 | ban     |
+| 103 | Rehan |    80 | hyd     |
++-----+-------+-------+---------+
+2 rows in set (0.00 sec)
+
+
+# ALTER :-
+   
+    - The ALTER TABLE command is used to modify the table structure, like:
+       - Add a new column
+       - Modify a column
+       - Rename a column
+       - Delete a column
+
+   # Add a new column :-
+      
+        # Syntax :-
+              ALTER TABLE student ADD COLUMN email VARCHAR(50);
+
+ mysql> alter table student add column email varchar(50);
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from student;
++-----+--------+-------+---------+-------+
+| ID  | NAME   | MARKS | ADDRESS | email |
++-----+--------+-------+---------+-------+
+| 101 | Adnan  |    85 | hyd     | NULL  |
+| 102 | Sonu   |    80 | ban     | NULL  |
+| 103 | Rehan  |    80 | hyd     | NULL  |
+| 104 | Ayaan  |    85 | ban     | NULL  |
+| 105 | Shoaib |    90 | hyd     | NULL  |
++-----+--------+-------+---------+-------+
+5 rows in set (0.00 sec)
+
+   # Modify a column :-
+ 
+       # Syntax :-
+             ALTER TABLE student MODIFY COLUMN NAME VARCHAR(100);
+
+mysql> alter table student modify NAME varchar(60);
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| ID      | int         | NO   | PRI | NULL    |       |
+| NAME    | varchar(60) | YES  |     | NULL    |       |
+| MARKS   | int         | YES  |     | NULL    |       |
+| ADDRESS | varchar(50) | YES  |     | NULL    |       |
+| email   | varchar(50) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+5 rows in set (0.01 sec)
+
+
+    # Rename a column :-
+ 
+       # Syntax :-
+             ALTER TABLE student RENAME COLUMN ADDRESS TO CITY;
+
+mysql> alter table student rename COLUMN ADDRESS to CITY;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from student;
++-----+--------+-------+------+-------+
+| ID  | NAME   | MARKS | CITY | email |
++-----+--------+-------+------+-------+
+| 101 | Adnan  |    85 | hyd  | NULL  |
+| 102 | Sonu   |    80 | ban  | NULL  |
+| 103 | Rehan  |    80 | hyd  | NULL  |
+| 104 | Ayaan  |    85 | ban  | NULL  |
+| 105 | Shoaib |    90 | hyd  | NULL  |
++-----+--------+-------+------+-------+
+5 rows in set (0.00 sec)
+
+    # Delete a column :-
+ 
+       # Syntax :-
+             ALTER TABLE student DROP COLUMN email;
+
+mysql> alter table student drop column email;
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from student;
++-----+--------+-------+------+
+| ID  | NAME   | MARKS | CITY |
++-----+--------+-------+------+
+| 101 | Adnan  |    85 | hyd  |
+| 102 | Sonu   |    80 | ban  |
+| 103 | Rehan  |    80 | hyd  |
+| 104 | Ayaan  |    85 | ban  |
+| 105 | Shoaib |    90 | hyd  |
++-----+--------+-------+------+
+5 rows in set (0.00 sec)
+
+# UPDATE :-
+
+     - The UPDATE command is used to change existing data in a table.
+
+  # Syntax :- 
+         UPDATE table_name SET column = value WHERE condition;
+
+mysql> select * from student;
++-----+--------+-------+------+
+| ID  | NAME   | MARKS | CITY |
++-----+--------+-------+------+
+| 101 | Adnan  |    85 | hyd  |
+| 102 | Sonu   |    80 | ban  |
+| 103 | Rehan  |    80 | hyd  |
+| 104 | Ayaan  |    85 | ban  |
+| 105 | Shoaib |    90 | hyd  |
++-----+--------+-------+------+
+5 rows in set (0.07 sec)
+
+mysql> UPDATE student SET NAME = 'Khwaja' WHERE ID = 102;
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from student;
++-----+--------+-------+------+
+| ID  | NAME   | MARKS | CITY |
++-----+--------+-------+------+
+| 101 | Adnan  |    85 | hyd  |
+| 102 | Khwaja |    80 | ban  |
+| 103 | Rehan  |    80 | hyd  |
+| 104 | Ayaan  |    85 | ban  |
+| 105 | Shoaib |    90 | hyd  |
++-----+--------+-------+------+
+5 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+ 
