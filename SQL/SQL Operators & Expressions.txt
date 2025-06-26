@@ -1,0 +1,315 @@
+# SQL Arithmetic Operators :-
+
+    - SQL uses arithmetic operators to perform mathematical calculations on numeric data.
+
+1) Addition (+) :-
+
+mysql> select 10 + 20;
++---------+
+| 10 + 20 |
++---------+
+|      30 |
++---------+
+1 row in set (0.00 sec)
+
+2) Substraction (-) :-
+
+mysql> select 10 - 2;
++--------+
+| 10 - 2 |
++--------+
+|      8 |
++--------+
+1 row in set (0.01 sec)
+
+
+3) Multiplication (*) :-
+
+mysql> select 10 * 2;
++--------+
+| 10 * 2 |
++--------+
+|     20 |
++--------+
+1 row in set (0.00 sec)
+
+
+4) Devision (/) :-
+
+mysql> select 10 / 2;
++--------+
+| 10 / 2 |
++--------+
+| 5.0000 |
++--------+
+1 row in set (0.00 sec)
+
+
+5) Modules (%) :-
+
+mysql> select 10 % 2;
++--------+
+| 10 % 2 |
++--------+
+|      0 |
++--------+
+1 row in set (0.00 sec)
+
+# Comparison Operators :-
+ 
+        - Comparison operators are used in SQL to compare values in conditions like WHERE, CASE.
+
+mysql> select * from customer;
++----+----------+------+-----------+----------+
+| ID | NAME     | AGE  | ADDRESS   | SALARY   |
++----+----------+------+-----------+----------+
+|  1 | Ramesh   |   32 | Ahmedabad |  2000.00 |
+|  2 | Khilan   |   25 | Delhi     |  1500.00 |
+|  3 | Kaushik  |   23 | Kota      |  2000.00 |
+|  4 | Chaitali |   25 | Mumbai    |  6500.00 |
+|  5 | Hardik   |   27 | Bhopal    |  8500.00 |
+|  6 | Komal    |   22 | MP        |  4500.00 |
+|  7 | Muffy    |   24 | Indore    | 10000.00 |
++----+----------+------+-----------+----------+
+7 rows in set (0.06 sec)
+
+1) Less than (<) :-
+
+mysql> select * from customer where SALARY < 5000;
++----+---------+------+-----------+---------+
+| ID | NAME    | AGE  | ADDRESS   | SALARY  |
++----+---------+------+-----------+---------+
+|  1 | Ramesh  |   32 | Ahmedabad | 2000.00 |
+|  2 | Khilan  |   25 | Delhi     | 1500.00 |
+|  3 | Kaushik |   23 | Kota      | 2000.00 |
+|  6 | Komal   |   22 | MP        | 4500.00 |
++----+---------+------+-----------+---------+
+4 rows in set (0.00 sec)
+
+2) Greater than (>) :- 
+
+mysql> select * from customer where SALARY > 5000;
++----+----------+------+---------+----------+
+| ID | NAME     | AGE  | ADDRESS | SALARY   |
++----+----------+------+---------+----------+
+|  4 | Chaitali |   25 | Mumbai  |  6500.00 |
+|  5 | Hardik   |   27 | Bhopal  |  8500.00 |
+|  7 | Muffy    |   24 | Indore  | 10000.00 |
++----+----------+------+---------+----------+
+3 rows in set (0.00 sec)
+
+3) Equal to (=) :-
+
+mysql> select * from customer where SALARY = 2000;
++----+---------+------+-----------+---------+
+| ID | NAME    | AGE  | ADDRESS   | SALARY  |
++----+---------+------+-----------+---------+
+|  1 | Ramesh  |   32 | Ahmedabad | 2000.00 |
+|  3 | Kaushik |   23 | Kota      | 2000.00 |
++----+---------+------+-----------+---------+
+2 rows in set (0.00 sec)
+
+4) Not Equal to	(!=) :-
+
+mysql> select * from customer where SALARY != 2000;
++----+----------+------+---------+----------+
+| ID | NAME     | AGE  | ADDRESS | SALARY   |
++----+----------+------+---------+----------+
+|  2 | Khilan   |   25 | Delhi   |  1500.00 |
+|  4 | Chaitali |   25 | Mumbai  |  6500.00 |
+|  5 | Hardik   |   27 | Bhopal  |  8500.00 |
+|  6 | Komal    |   22 | MP      |  4500.00 |
+|  7 | Muffy    |   24 | Indore  | 10000.00 |
++----+----------+------+---------+----------+
+5 rows in set (0.00 sec)
+
+5) not Equal to	(<>) :-
+
+mysql> select * from customer where SALARY <> 2000;
++----+----------+------+---------+----------+
+| ID | NAME     | AGE  | ADDRESS | SALARY   |
++----+----------+------+---------+----------+
+|  2 | Khilan   |   25 | Delhi   |  1500.00 |
+|  4 | Chaitali |   25 | Mumbai  |  6500.00 |
+|  5 | Hardik   |   27 | Bhopal  |  8500.00 |
+|  6 | Komal    |   22 | MP      |  4500.00 |
+|  7 | Muffy    |   24 | Indore  | 10000.00 |
++----+----------+------+---------+----------+
+5 rows in set (0.00 sec)
+
+6) Greater than or equal to (>=):-
+
+mysql> select * from customer where SALARY >= 6500;
++----+----------+------+---------+----------+
+| ID | NAME     | AGE  | ADDRESS | SALARY   |
++----+----------+------+---------+----------+
+|  4 | Chaitali |   25 | Mumbai  |  6500.00 |
+|  5 | Hardik   |   27 | Bhopal  |  8500.00 |
+|  7 | Muffy    |   24 | Indore  | 10000.00 |
++----+----------+------+---------+----------+
+3 rows in set (0.00 sec)
+
+#  Logical Operators :-
+  
+        - Logical operators are used to combine multiple conditions..
+
+mysql> select * from customer;
++----+----------+------+-----------+----------+
+| ID | NAME     | AGE  | ADDRESS   | SALARY   |
++----+----------+------+-----------+----------+
+|  1 | Ramesh   |   32 | Ahmedabad |  2000.00 |
+|  2 | Khilan   |   25 | Delhi     |  1500.00 |
+|  3 | Kaushik  |   23 | Kota      |  2000.00 |
+|  4 | Chaitali |   25 | Mumbai    |  6500.00 |
+|  5 | Hardik   |   27 | Bhopal    |  8500.00 |
+|  6 | Komal    |   22 | MP        |  4500.00 |
+|  7 | Muffy    |   24 | Indore    | 10000.00 |
++----+----------+------+-----------+----------+
+7 rows in set (0.00 sec)
+
+1) Logical AND (AND) :-
+
+mysql> select * from customer where SALARY >= 6500 and AGE >= 25;
++----+----------+------+---------+---------+
+| ID | NAME     | AGE  | ADDRESS | SALARY  |
++----+----------+------+---------+---------+
+|  4 | Chaitali |   25 | Mumbai  | 6500.00 |
+|  5 | Hardik   |   27 | Bhopal  | 8500.00 |
++----+----------+------+---------+---------+
+2 rows in set (0.00 sec)
+
+2) Logical OR (OR) :-
+
+mysql> select * from customer where SALARY >= 6500 or AGE >= 25;
++----+----------+------+-----------+----------+
+| ID | NAME     | AGE  | ADDRESS   | SALARY   |
++----+----------+------+-----------+----------+
+|  1 | Ramesh   |   32 | Ahmedabad |  2000.00 |
+|  2 | Khilan   |   25 | Delhi     |  1500.00 |
+|  4 | Chaitali |   25 | Mumbai    |  6500.00 |
+|  5 | Hardik   |   27 | Bhopal    |  8500.00 |
+|  7 | Muffy    |   24 | Indore    | 10000.00 |
++----+----------+------+-----------+----------+
+5 rows in set (0.00 sec)
+
+3) Logical NOT (NOT) :-
+
+mysql> select * from customer where AGE is not null;
++----+----------+------+-----------+----------+
+| ID | NAME     | AGE  | ADDRESS   | SALARY   |
++----+----------+------+-----------+----------+
+|  1 | Ramesh   |   32 | Ahmedabad |  2000.00 |
+|  2 | Khilan   |   25 | Delhi     |  1500.00 |
+|  3 | Kaushik  |   23 | Kota      |  2000.00 |
+|  4 | Chaitali |   25 | Mumbai    |  6500.00 |
+|  5 | Hardik   |   27 | Bhopal    |  8500.00 |
+|  6 | Komal    |   22 | MP        |  4500.00 |
+|  7 | Muffy    |   24 | Indore    | 10000.00 |
++----+----------+------+-----------+----------+
+7 rows in set (0.00 sec)
+
+# SQL - Boolean Expressions :-
+
+     - A Boolean expression is any expression that returns either TRUE, FALSE, or NULL.
+
+   # Syntax :-
+           SELECT column1, column2, ...FROM table_name WHERE boolean_condition;
+ 
+mysql> select * from customer;
++----+----------+------+-----------+----------+
+| ID | NAME     | AGE  | ADDRESS   | SALARY   |
++----+----------+------+-----------+----------+
+|  1 | Ramesh   |   32 | Ahmedabad |  2000.00 |
+|  2 | Khilan   |   25 | Delhi     |  1500.00 |
+|  3 | Kaushik  |   23 | Kota      |  2000.00 |
+|  4 | Chaitali |   25 | Mumbai    |  6500.00 |
+|  5 | Hardik   |   27 | Bhopal    |  8500.00 |
+|  6 | Komal    |   22 | MP        |  4500.00 |
+|  7 | Muffy    |   24 | Indore    | 10000.00 |
++----+----------+------+-----------+----------+
+7 rows in set (0.07 sec)
+
+
+# Here is simple example showing usage of SQL Boolean Expressions :-
+
+mysql> select * from customer where salary = 10000;
++----+-------+------+---------+----------+
+| ID | NAME  | AGE  | ADDRESS | SALARY   |
++----+-------+------+---------+----------+
+|  7 | Muffy |   24 | Indore  | 10000.00 |
++----+-------+------+---------+----------+
+1 row in set (0.00 sec)
+
+# SQL - Numeric Expression :-
+
+        - Numeric expressions are expressions that perform mathematical operations on numeric values using arithmetic operators..
+
+   # syntax :-
+          SELECT expression AS alias_name FROM table_name WHERE condition;
+
+
+mysql> select (15 + 5) as ADDITION;
++----------+
+| ADDITION |
++----------+
+|       20 |
++----------+
+1 row in set (0.00 sec)
+
+
+mysql> select count(*) as "Records" from customer;
++---------+
+| Records |
++---------+
+|       7 |
++---------+
+1 row in set (0.02 sec)
+
+
+# SQL - Date Expressions :-
+
+        - Date Expressions return current system date and time values..
+
+mysql>  SELECT CURRENT_TIMESTAMP;
++---------------------+
+| CURRENT_TIMESTAMP   |
++---------------------+
+| 2025-06-26 22:12:52 |
++---------------------+
+1 row in set (0.00 sec)
+
+
+mysql> SELECT NOW();
++---------------------+
+| NOW()               |
++---------------------+
+| 2025-06-26 22:14:46 |
++---------------------+
+1 row in set (0.00 sec)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
