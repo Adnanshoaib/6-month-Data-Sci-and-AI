@@ -1,0 +1,350 @@
+SQL Functions :-
+
+    - SQL has many built-in functions for performing processing on string or numeric data.
+
+*  Following is the list of all useful SQL built-in functions :-
+
+1) COUNT Function :-
+     
+      - The SQL COUNT aggregate function is used to count the number of rows in a database table. 
+
+mysql> SELECT * FROM employee_tbl;
++------+------+------------+--------------------+
+| id   | name | work_date  | daily_typing_pages |
++------+------+------------+--------------------+
+|    1 | John | 2007-01-24 |                250 |
+|    2 | Ram  | 2007-05-27 |                220 |
+|    3 | Jack | 2007-05-06 |                170 |
+|    3 | Jack | 2007-04-06 |                100 |
+|    4 | Jill | 2007-04-06 |                220 |
+|    5 | Zara | 2007-06-06 |                300 |
+|    5 | Zara | 2007-02-06 |                350 |
++------+------+------------+--------------------+
+7 rows in set (0.00 sec)
+
+mysql> select COUNT(* ) from employee_tbl;
++-----------+
+| COUNT(* ) |
++-----------+
+|         7 |
++-----------+
+1 row in set (0.00 sec)
+
+  - count the total records..
+
+mysql> select COUNT(* ) from employee_tbl where name='Zara';
++-----------+
+| COUNT(* ) |
++-----------+
+|         2 |
++-----------+
+1 row in set (0.01 sec)
+
+
+2) MAX Function :-
+
+       - SQL MAX function is used to find out the record with maximum value among a record set. 
+
+mysql> SELECT * FROM employee_tbl;
++------+------+------------+--------------------+
+| id   | name | work_date  | daily_typing_pages |
++------+------+------------+--------------------+
+|    1 | John | 2007-01-24 |                250 |
+|    2 | Ram  | 2007-05-27 |                220 |
+|    3 | Jack | 2007-05-06 |                170 |
+|    3 | Jack | 2007-04-06 |                100 |
+|    4 | Jill | 2007-04-06 |                220 |
+|    5 | Zara | 2007-06-06 |                300 |
+|    5 | Zara | 2007-02-06 |                350 |
++------+------+------------+--------------------+
+7 rows in set (0.00 sec)
+
+
+mysql> select MAX( daily_typing_pages ) from employee_tbl;
++---------------------------+
+| MAX( daily_typing_pages ) |
++---------------------------+
+|                       350 |
++---------------------------+
+1 row in set (0.00 sec)
+
+    - Provide MAximum record in the table..
+
+mysql> SELECT MIN(daily_typing_pages) least, MAX(daily_typing_pages) max  FROM employee_tbl;
++-------+------+
+| least | max  |
++-------+------+
+|   100 |  350 |
++-------+------+
+1 row in set (0.00 sec)
+
+
+3)  MIN Function :-
+
+          - SQL MIN function is used to find out the record with minimum value among a record set.
+
+
+mysql> SELECT * FROM employee_tbl;
++------+------+------------+--------------------+
+| id   | name | work_date  | daily_typing_pages |
++------+------+------------+--------------------+
+|    1 | John | 2007-01-24 |                250 |
+|    2 | Ram  | 2007-05-27 |                220 |
+|    3 | Jack | 2007-05-06 |                170 |
+|    3 | Jack | 2007-04-06 |                100 |
+|    4 | Jill | 2007-04-06 |                220 |
+|    5 | Zara | 2007-06-06 |                300 |
+|    5 | Zara | 2007-02-06 |                350 |
++------+------+------------+--------------------+
+7 rows in set (0.00 sec)
+
+
+mysql> select MIN( daily_typing_pages ) from employee_tbl;
++---------------------------+
+| MIN( daily_typing_pages ) |
++---------------------------+
+|                       100 |
++---------------------------+
+1 row in set (0.00 sec)
+
+    
+4) AVG Function :-
+
+        - SQL AVG function is used to find out the average of a field in various records. 
+
+mysql> SELECT * FROM employee_tbl;
++------+------+------------+--------------------+
+| id   | name | work_date  | daily_typing_pages |
++------+------+------------+--------------------+
+|    1 | John | 2007-01-24 |                250 |
+|    2 | Ram  | 2007-05-27 |                220 |
+|    3 | Jack | 2007-05-06 |                170 |
+|    3 | Jack | 2007-04-06 |                100 |
+|    4 | Jill | 2007-04-06 |                220 |
+|    5 | Zara | 2007-06-06 |                300 |
+|    5 | Zara | 2007-02-06 |                350 |
++------+------+------------+--------------------+
+7 rows in set (0.00 sec)
+
+mysql> select AVG( daily_typing_pages ) from employee_tbl;
++---------------------------+
+| AVG( daily_typing_pages ) |
++---------------------------+
+|                  230.0000 |
++---------------------------+
+1 row in set (0.00 sec)
+
+
+5) SUM Function :- 
+
+     - SQL SUM function is used to find out the sum of a field in various records. 
+
+
+mysql> SELECT * FROM employee_tbl;
++------+------+------------+--------------------+
+| id   | name | work_date  | daily_typing_pages |
++------+------+------------+--------------------+
+|    1 | John | 2007-01-24 |                250 |
+|    2 | Ram  | 2007-05-27 |                220 |
+|    3 | Jack | 2007-05-06 |                170 |
+|    3 | Jack | 2007-04-06 |                100 |
+|    4 | Jill | 2007-04-06 |                220 |
+|    5 | Zara | 2007-06-06 |                300 |
+|    5 | Zara | 2007-02-06 |                350 |
++------+------+------------+--------------------+
+7 rows in set (0.00 sec)
+
+
+mysql> select SUM( daily_typing_pages ) from employee_tbl;
++---------------------------+
+| SUM( daily_typing_pages ) |
++---------------------------+
+|                      1610 |
++---------------------------+
+1 row in set (0.00 sec)
+
+6) SQRT Function :- 
+
+     - SQL SQRT function is used to find out the square root of any number.
+
+
+mysql>   select SQRT(16);
++----------+
+| SQRT(16) |
++----------+
+|        4 |
++----------+
+1 row in set (0.00 sec)
+
+
+7)  RAND Function :-
+
+        - SQL has a RAND function that can be invoked to produce random numbers between 0 and 1..
+
+mysql>  SELECT RAND( ), RAND( ), RAND( );
++--------------------+--------------------+--------------------+
+| RAND( )            | RAND( )            | RAND( )            |
++--------------------+--------------------+--------------------+
+| 0.1498019016811642 | 0.4871485237843809 | 0.9863369446120569 |
++--------------------+--------------------+--------------------+
+1 row in set (0.00 sec)
+
+
+
+mysql>  SELECT RAND( 1 ), RAND( ), RAND( );
++---------------------+--------------------+---------------------+
+| RAND( 1 )           | RAND( )            | RAND( )             |
++---------------------+--------------------+---------------------+
+| 0.40540353712197724 | 0.4702391824407868 | 0.39218510910140825 |
++---------------------+--------------------+---------------------+
+1 row in set (0.00 sec)
+
+
+mysql> SELECT * FROM employee_tbl ORDER BY RAND();
++------+------+------------+--------------------+
+| id   | name | work_date  | daily_typing_pages |
++------+------+------------+--------------------+
+|    5 | Zara | 2007-06-06 |                300 |
+|    3 | Jack | 2007-05-06 |                170 |
+|    4 | Jill | 2007-04-06 |                220 |
+|    3 | Jack | 2007-04-06 |                100 |
+|    1 | John | 2007-01-24 |                250 |
+|    2 | Ram  | 2007-05-27 |                220 |
+|    5 | Zara | 2007-02-06 |                350 |
++------+------+------------+--------------------+
+7 rows in set (0.00 sec)
+
+
+8) CONTACT Function :-
+ 
+       - SQL CONCAT function is used to concatenate two strings to form a single string. Try out the following example: 
+
+mysql> SELECT CONCAT('FIRST ', 'SECOND');
++----------------------------+
+| CONCAT('FIRST ', 'SECOND') |
++----------------------------+
+| FIRST SECOND               |
++----------------------------+
+1 row in set (0.00 sec)
+
+
+
+mysql> SELECT * FROM employee_tbl;
++------+------+------------+--------------------+
+| id   | name | work_date  | daily_typing_pages |
++------+------+------------+--------------------+
+|    1 | John | 2007-01-24 |                250 |
+|    2 | Ram  | 2007-05-27 |                220 |
+|    3 | Jack | 2007-05-06 |                170 |
+|    3 | Jack | 2007-04-06 |                100 |
+|    4 | Jill | 2007-04-06 |                220 |
+|    5 | Zara | 2007-06-06 |                300 |
+|    5 | Zara | 2007-02-06 |                350 |
++------+------+------------+--------------------+
+7 rows in set (0.00 sec)
+
+mysql> SELECT CONCAT(id, name, work_date) from employee_tbl;
++-----------------------------+
+| CONCAT(id, name, work_date) |
++-----------------------------+
+| 1John2007-01-24             |
+| 2Ram2007-05-27              |
+| 3Jack2007-05-06             |
+| 3Jack2007-04-06             |
+| 4Jill2007-04-06             |
+| 5Zara2007-06-06             |
+| 5Zara2007-02-06             |
++-----------------------------+
+7 rows in set (0.00 sec)
+
+# Wildcards :- 
+
+   LIKE :- 
+
+      - The LIKE operator is used to compare a value to similar values using wildcard operators. 
+
+   1) (%) ==>  Use % for flexible match
+   2) (_) ==>  Use _ for fixed character match
+
+
+
+1) % :-
+  
+   mysql> select * from emp;
++----+--------+---------+--------+
+| ID | SALARY | EMPCODE | NAME   |
++----+--------+---------+--------+
+| 24 |   8000 |     102 | Adnan  |
+| 34 |  10000 |     103 | shoaib |
+| 40 |   2000 |     101 | Aman   |
+| 44 |   5000 |     104 | rehan  |
+| 54 |   4000 |     105 | sonu   |
++----+--------+---------+--------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT * FROM emp WHERE name LIKE 'A%';
++----+--------+---------+-------+
+| ID | SALARY | EMPCODE | NAME  |
++----+--------+---------+-------+
+| 24 |   8000 |     102 | Adnan |
+| 40 |   2000 |     101 | Aman  |
++----+--------+---------+-------+
+2 rows in set (0.00 sec)
+
+  - Start with 'A'...
+
+mysql> SELECT * FROM emp WHERE name LIKE '%n';
++----+--------+---------+-------+
+| ID | SALARY | EMPCODE | NAME  |
++----+--------+---------+-------+
+| 24 |   8000 |     102 | Adnan |
+| 40 |   2000 |     101 | Aman  |
+| 44 |   5000 |     104 | rehan |
++----+--------+---------+-------+
+3 rows in set (0.00 sec)
+
+   - Ends with 'n'...
+
+mysql> SELECT * FROM emp WHERE name LIKE '%d%';
++----+--------+---------+-------+
+| ID | SALARY | EMPCODE | NAME  |
++----+--------+---------+-------+
+| 24 |   8000 |     102 | Adnan |
++----+--------+---------+-------+
+1 row in set (0.00 sec)
+
+   -  Has 'd' anywhere...
+
+2) _ :-
+
+
+mysql> select * from emp where name like '_e%';
++----+--------+---------+-------+
+| ID | SALARY | EMPCODE | NAME  |
++----+--------+---------+-------+
+| 44 |   5000 |     104 | rehan |
++----+--------+---------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from emp where name like '_d%';
++----+--------+---------+-------+
+| ID | SALARY | EMPCODE | NAME  |
++----+--------+---------+-------+
+| 24 |   8000 |     102 | Adnan |
++----+--------+---------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from emp where name like '__o%';
++----+--------+---------+--------+
+| ID | SALARY | EMPCODE | NAME   |
++----+--------+---------+--------+
+| 34 |  10000 |     103 | shoaib |
++----+--------+---------+--------+
+1 row in set (0.00 sec)
+
+
+
+     
+
+
+
