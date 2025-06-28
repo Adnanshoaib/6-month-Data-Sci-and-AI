@@ -1,0 +1,225 @@
+SQL Joins :-
+
+    - The SQL Joins clause is used to combine records from two or more tables in a database.
+    - A JOIN is a means for combining fields from two tables by using values common to each. 
+
+# SQL Join Types :-
+ 
+  - There are different types of joins available in SQL :-
+
+ 1) INNER JOIN :-
+
+         - returns rows when there is a match in both tables.
+         - The most frequently used and important of the joins is the INNER JOIN. They are also referred to as an EQUIJOIN. 
+ 
+
+mysql> select * from student;
++--------+-----+---------+-------+
+| name   | id  | address | marks |
++--------+-----+---------+-------+
+| shoaib | 101 | chennai |    66 |
+| Ayesha | 102 | Mumbai  |    75 |
+| Ravi   | 103 | Delhi   |    90 |
+| Sara   | 104 | Pune    |    82 |
+| John   | 105 | Chennai |    79 |
++--------+-----+---------+-------+
+5 rows in set (0.06 sec)
+
+mysql> select * from emp;
++-----+--------+---------+--------+
+| ID  | SALARY | EMPCODE | NAME   |
++-----+--------+---------+--------+
+| 101 |   8000 |     102 | Adnan  |
+| 102 |  10000 |     103 | shoaib |
+| 103 |   2000 |     101 | Aman   |
+| 104 |   5000 |     104 | rehan  |
+| 105 |   4000 |     105 | sonu   |
++-----+--------+---------+--------+
+5 rows in set (0.02 sec)
+
+mysql> select * from student inner join emp on student.id = emp.id;
++--------+-----+---------+-------+-----+--------+---------+--------+
+| name   | id  | address | marks | ID  | SALARY | EMPCODE | NAME   |
++--------+-----+---------+-------+-----+--------+---------+--------+
+| shoaib | 101 | chennai |    66 | 101 |   8000 |     102 | Adnan  |
+| Ayesha | 102 | Mumbai  |    75 | 102 |  10000 |     103 | shoaib |
+| Ravi   | 103 | Delhi   |    90 | 103 |   2000 |     101 | Aman   |
+| Sara   | 104 | Pune    |    82 | 104 |   5000 |     104 | rehan  |
+| John   | 105 | Chennai |    79 | 105 |   4000 |     105 | sonu   |
++--------+-----+---------+-------+-----+--------+---------+--------+
+5 rows in set (0.01 sec)
+
+
+  2) LEFT JOIN :-
+         - returns all rows from the left table, even if there are no matches in the right table. 
+         - The SQL LEFT JOIN returns all rows from the left table, even if there are no matches in the right table. This means that if the ON clause matches 0 (zero) records in right table, the join will still return a row in the result, but with NULL in each column from right table. 
+
+ 
+mysql> select * from emp;
++-----+--------+---------+--------+
+| ID  | SALARY | EMPCODE | NAME   |
++-----+--------+---------+--------+
+| 101 |   8000 |     102 | Adnan  |
+| 102 |  10000 |     103 | shoaib |
+| 103 |   2000 |     101 | Aman   |
+| 104 |   5000 |     104 | rehan  |
+| 106 |   4000 |     105 | sonu   |
++-----+--------+---------+--------+
+5 rows in set (0.00 sec)
+
+mysql> select * from student;
++--------+-----+---------+-------+
+| name   | id  | address | marks |
++--------+-----+---------+-------+
+| shoaib | 101 | chennai |    66 |
+| Ayesha | 102 | Mumbai  |    75 |
+| Ravi   | 103 | Delhi   |    90 |
+| Sara   | 104 | Pune    |    82 |
+| John   | 105 | Chennai |    79 |
++--------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select * from student left join emp on student.id = emp.id;
++--------+-----+---------+-------+------+--------+---------+--------+
+| name   | id  | address | marks | ID   | SALARY | EMPCODE | NAME   |
++--------+-----+---------+-------+------+--------+---------+--------+
+| shoaib | 101 | chennai |    66 |  101 |   8000 |     102 | Adnan  |
+| Ayesha | 102 | Mumbai  |    75 |  102 |  10000 |     103 | shoaib |
+| Ravi   | 103 | Delhi   |    90 |  103 |   2000 |     101 | Aman   |
+| Sara   | 104 | Pune    |    82 |  104 |   5000 |     104 | rehan  |
+| John   | 105 | Chennai |    79 | NULL |   NULL |    NULL | NULL   |
++--------+-----+---------+-------+------+--------+---------+--------+
+5 rows in set (0.00 sec)
+
+
+  3) RIGHT JOIN :-
+            - returns all rows from the right table, even if there are no matches in the left table. 
+            - The SQL RIGHT JOIN returns all rows from the right table, even if there are no matches in the left table. This means that if the ON clause matches 0 (zero) records in left table, the join will still return a row in the result, but with NULL in each column from left table. 
+
+mysql> select * from student;
++--------+-----+---------+-------+
+| name   | id  | address | marks |
++--------+-----+---------+-------+
+| shoaib | 101 | chennai |    66 |
+| Ayesha | 102 | Mumbai  |    75 |
+| Ravi   | 103 | Delhi   |    90 |
+| Sara   | 104 | Pune    |    82 |
+| John   | 105 | Chennai |    79 |
++--------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select * from emp;
++-----+--------+---------+--------+
+| ID  | SALARY | EMPCODE | NAME   |
++-----+--------+---------+--------+
+| 101 |   8000 |     102 | Adnan  |
+| 102 |  10000 |     103 | shoaib |
+| 103 |   2000 |     101 | Aman   |
+| 104 |   5000 |     104 | rehan  |
+| 106 |   4000 |     105 | sonu   |
++-----+--------+---------+--------+
+5 rows in set (0.00 sec)
+
+mysql> select * from student right join emp on student.id = emp.id;
++--------+------+---------+-------+-----+--------+---------+--------+
+| name   | id   | address | marks | ID  | SALARY | EMPCODE | NAME   |
++--------+------+---------+-------+-----+--------+---------+--------+
+| shoaib |  101 | chennai |    66 | 101 |   8000 |     102 | Adnan  |
+| Ayesha |  102 | Mumbai  |    75 | 102 |  10000 |     103 | shoaib |
+| Ravi   |  103 | Delhi   |    90 | 103 |   2000 |     101 | Aman   |
+| Sara   |  104 | Pune    |    82 | 104 |   5000 |     104 | rehan  |
+| NULL   | NULL | NULL    |  NULL | 106 |   4000 |     105 | sonu   |
++--------+------+---------+-------+-----+--------+---------+--------+
+5 rows in set (0.00 sec)
+
+
+  4) cross join :- 
+        - A CROSS JOIN returns the Cartesian product of two tables, meaning it joins every row of the first table with every row of the second table.
+
+mysql> select * from student ;
++--------+-----+---------+-------+
+| name   | id  | address | marks |
++--------+-----+---------+-------+
+| shoaib | 101 | chennai |    66 |
+| Ayesha | 102 | Mumbai  |    75 |
+| Ravi   | 103 | Delhi   |    90 |
+| Sara   | 104 | Pune    |    82 |
+| John   | 105 | Chennai |    79 |
++--------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select * from emp;
++-----+--------+---------+--------+
+| ID  | SALARY | EMPCODE | NAME   |
++-----+--------+---------+--------+
+| 101 |   8000 |     102 | Adnan  |
+| 102 |  10000 |     103 | shoaib |
+| 103 |   2000 |     101 | Aman   |
+| 104 |   5000 |     104 | rehan  |
+| 106 |   4000 |     105 | sonu   |
++-----+--------+---------+--------+
+5 rows in set (0.00 sec)
+
+mysql> select * from student cross join emp;
++--------+-----+---------+-------+-----+--------+---------+--------+
+| name   | id  | address | marks | ID  | SALARY | EMPCODE | NAME   |
++--------+-----+---------+-------+-----+--------+---------+--------+
+| John   | 105 | Chennai |    79 | 101 |   8000 |     102 | Adnan  |
+| Sara   | 104 | Pune    |    82 | 101 |   8000 |     102 | Adnan  |
+| Ravi   | 103 | Delhi   |    90 | 101 |   8000 |     102 | Adnan  |
+| Ayesha | 102 | Mumbai  |    75 | 101 |   8000 |     102 | Adnan  |
+| shoaib | 101 | chennai |    66 | 101 |   8000 |     102 | Adnan  |
+| John   | 105 | Chennai |    79 | 102 |  10000 |     103 | shoaib |
+| Sara   | 104 | Pune    |    82 | 102 |  10000 |     103 | shoaib |
+| Ravi   | 103 | Delhi   |    90 | 102 |  10000 |     103 | shoaib |
+| Ayesha | 102 | Mumbai  |    75 | 102 |  10000 |     103 | shoaib |
+| shoaib | 101 | chennai |    66 | 102 |  10000 |     103 | shoaib |
+| John   | 105 | Chennai |    79 | 103 |   2000 |     101 | Aman   |
+| Sara   | 104 | Pune    |    82 | 103 |   2000 |     101 | Aman   |
+| Ravi   | 103 | Delhi   |    90 | 103 |   2000 |     101 | Aman   |
+| Ayesha | 102 | Mumbai  |    75 | 103 |   2000 |     101 | Aman   |
+| shoaib | 101 | chennai |    66 | 103 |   2000 |     101 | Aman   |
+| John   | 105 | Chennai |    79 | 104 |   5000 |     104 | rehan  |
+| Sara   | 104 | Pune    |    82 | 104 |   5000 |     104 | rehan  |
+| Ravi   | 103 | Delhi   |    90 | 104 |   5000 |     104 | rehan  |
+| Ayesha | 102 | Mumbai  |    75 | 104 |   5000 |     104 | rehan  |
+| shoaib | 101 | chennai |    66 | 104 |   5000 |     104 | rehan  |
+| John   | 105 | Chennai |    79 | 106 |   4000 |     105 | sonu   |
+| Sara   | 104 | Pune    |    82 | 106 |   4000 |     105 | sonu   |
+| Ravi   | 103 | Delhi   |    90 | 106 |   4000 |     105 | sonu   |
+| Ayesha | 102 | Mumbai  |    75 | 106 |   4000 |     105 | sonu   |
+| shoaib | 101 | chennai |    66 | 106 |   4000 |     105 | sonu   |
++--------+-----+---------+-------+-----+--------+---------+--------+
+25 rows in set (0.00 sec)
+
+mysql> select * from emp cross join student;
++-----+--------+---------+--------+--------+-----+---------+-------+
+| ID  | SALARY | EMPCODE | NAME   | name   | id  | address | marks |
++-----+--------+---------+--------+--------+-----+---------+-------+
+| 106 |   4000 |     105 | sonu   | shoaib | 101 | chennai |    66 |
+| 104 |   5000 |     104 | rehan  | shoaib | 101 | chennai |    66 |
+| 103 |   2000 |     101 | Aman   | shoaib | 101 | chennai |    66 |
+| 102 |  10000 |     103 | shoaib | shoaib | 101 | chennai |    66 |
+| 101 |   8000 |     102 | Adnan  | shoaib | 101 | chennai |    66 |
+| 106 |   4000 |     105 | sonu   | Ayesha | 102 | Mumbai  |    75 |
+| 104 |   5000 |     104 | rehan  | Ayesha | 102 | Mumbai  |    75 |
+| 103 |   2000 |     101 | Aman   | Ayesha | 102 | Mumbai  |    75 |
+| 102 |  10000 |     103 | shoaib | Ayesha | 102 | Mumbai  |    75 |
+| 101 |   8000 |     102 | Adnan  | Ayesha | 102 | Mumbai  |    75 |
+| 106 |   4000 |     105 | sonu   | Ravi   | 103 | Delhi   |    90 |
+| 104 |   5000 |     104 | rehan  | Ravi   | 103 | Delhi   |    90 |
+| 103 |   2000 |     101 | Aman   | Ravi   | 103 | Delhi   |    90 |
+| 102 |  10000 |     103 | shoaib | Ravi   | 103 | Delhi   |    90 |
+| 101 |   8000 |     102 | Adnan  | Ravi   | 103 | Delhi   |    90 |
+| 106 |   4000 |     105 | sonu   | Sara   | 104 | Pune    |    82 |
+| 104 |   5000 |     104 | rehan  | Sara   | 104 | Pune    |    82 |
+| 103 |   2000 |     101 | Aman   | Sara   | 104 | Pune    |    82 |
+| 102 |  10000 |     103 | shoaib | Sara   | 104 | Pune    |    82 |
+| 101 |   8000 |     102 | Adnan  | Sara   | 104 | Pune    |    82 |
+| 106 |   4000 |     105 | sonu   | John   | 105 | Chennai |    79 |
+| 104 |   5000 |     104 | rehan  | John   | 105 | Chennai |    79 |
+| 103 |   2000 |     101 | Aman   | John   | 105 | Chennai |    79 |
+| 102 |  10000 |     103 | shoaib | John   | 105 | Chennai |    79 |
+| 101 |   8000 |     102 | Adnan  | John   | 105 | Chennai |    79 |
++-----+--------+---------+--------+--------+-----+---------+-------+
+25 rows in set (0.00 sec)
