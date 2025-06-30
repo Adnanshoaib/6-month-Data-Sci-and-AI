@@ -24,9 +24,7 @@ A record is a row in a table — also called an entry.
 It contains all the field values for one item/person.
 # Basic Querying :-
 - Create Database :-
-  
-  -The CREATE DATABASE command is used to make a new DATABASE.
-
+  - The CREATE DATABASE command is used to make a new DATABASE.
   - Syntax :- CREATE DATABASE databasename;
 
                   
