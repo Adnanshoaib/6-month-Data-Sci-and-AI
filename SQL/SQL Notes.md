@@ -26,6 +26,12 @@ It contains all the field values for one item/person.
 - Create Database :-
   - The CREATE DATABASE command is used to make a new DATABASE.
   - Syntax :- CREATE DATABASE databasename;
+- CREATE TABLE :-
+  -The CREATE TABLE command is used to make a new table in the database.
+  - Syntax :- CREATE TABLE tablename ( column1 datatype, column2 datatype );
+
+
+  
 
                   
 
