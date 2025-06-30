@@ -45,6 +45,8 @@ It contains all the field values for one item/person.
 - ALTER :-
    - The ALTER TABLE command is used to modify the table structure, like:
        - Add a new column
+           - To store additional information that was not originally in the table.
+           - Syntax :- ALTER TABLE table_name ADD column_name datatype;
        - Modify a column
        - Rename a column
        - Delete a column
