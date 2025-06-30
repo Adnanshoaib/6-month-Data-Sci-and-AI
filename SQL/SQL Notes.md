@@ -44,12 +44,19 @@ It contains all the field values for one item/person.
    - Syntax :- UPDATE table_name SET column = value WHERE condition;
 - ALTER :-
    - The ALTER TABLE command is used to modify the table structure, like:
-       - Add a new column
+       - Add a new column :-
            - To store additional information that was not originally in the table.
            - Syntax :- ALTER TABLE table_name ADD column_name datatype;
-       - Modify a column
-       - Rename a column
-       - Delete a column
+       - Modify a column :-
+           - To change the data type, size, or other properties of an existing column.
+           - Syntax :- ALTER TABLE table_name MODIFY column_name new_datatype;
+       - Rename a column :-
+           - To make the column name more meaningful or accurate.
+           - Syntax :- ALTER TABLE table_name RENAME COLUMN old_name TO new_name;
+       - Delete a column :-
+           - To remove unnecessary or outdated columns from the table.
+           - Syntax :- ALTER TABLE table_name DROP COLUMN column_name;
+
 
 
 
