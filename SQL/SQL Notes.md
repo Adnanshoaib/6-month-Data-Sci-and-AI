@@ -29,6 +29,35 @@ It contains all the field values for one item/person.
 - CREATE TABLE :-
    - The CREATE TABLE command is used to make a new table in the database.
    - Syntax :- CREATE TABLE tablename ( column1 datatype, column2 datatype );
+- INSERT :-
+   - The INSERT  command is used to insert new records (rows) into the table.
+   - Syntax :- INSERT INTO tablename (column1, column2) VALUES (value1, value2)
+- SELECT :-
+   - The SELECT command is used to fetch or view data from a table.
+   - Syntax :- select * from databasename;
+- WHERE Clause :-
+   - The WHERE clause is used in SQL to filter rows from a table.
+   - It helps you get only the rows that match a specific condition.
+   - Syntax :- SELECT columns FROM tablename WHERE condition;
+- UPDATE :-
+   - The UPDATE command is used to change existing data in a table.
+   - Syntax :- UPDATE table_name SET column = value WHERE condition;
+- ALTER :-
+   - The ALTER TABLE command is used to modify the table structure, like:
+       - Add a new column
+       - Modify a column
+       - Rename a column
+       - Delete a column
+
+
+
+
+
+
+
+
+
+
 
 
   
