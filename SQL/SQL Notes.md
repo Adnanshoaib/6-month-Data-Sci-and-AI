@@ -23,13 +23,11 @@ It stores a specific type of data for each record (row).
 A record is a row in a table — also called an entry.
 It contains all the field values for one item/person.
 # Basic Querying :-
-     Create Database :-
-             -The CREATE DATABASE command is used to make a new DATABASE.
-   # Syntax :-
-                  CREATE DATABASE databasename;
-- Main point
-  - Sub point 1
-  - Sub point 2
+- Create Database :-
+  
+  -The CREATE DATABASE command is used to make a new DATABASE.
+
+  - Syntax :- CREATE DATABASE databasename;
 
                   
 
