@@ -56,6 +56,9 @@ It contains all the field values for one item/person.
        - Delete a column :-
            - To remove unnecessary or outdated columns from the table.
            - Syntax :- ALTER TABLE table_name DROP COLUMN column_name;
+# SQL Functions :-
+SQL has many built-in functions for performing processing on string or numeric data.
+ 
 
 
 
