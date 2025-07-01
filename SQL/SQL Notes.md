@@ -58,7 +58,32 @@ It contains all the field values for one item/person.
            - Syntax :- ALTER TABLE table_name DROP COLUMN column_name;
 # SQL Functions :-
 SQL has many built-in functions for performing processing on string or numeric data.
- 
+
+ - COUNT() :-
+     - Returns the number of rows (or non-NULL values) in a column.
+     - Syntax :- SELECT COUNT(column_name) FROM table_name;
+ - AVG() :-
+     - Returns the average of numeric values in a column.
+     - Syntax :- SELECT AVG(column_name) FROM table_name;
+ - SUM() :-
+     - Returns the total sum of values in a numeric column.
+     - SELECT SUM(column_name) FROM table_name;
+ - MAX() :-
+     - Returns the maximum (highest) value from a column.
+     - Syntax :- SELECT MAX(column_name) FROM table_name;
+ - MIN() :-
+     - Returns the minimum (lowest) value from a column.
+     - Syntax :- SELECT MIN(column_name) FROM table_name;
+ - SQRT() :-
+     - Returns the square root of a number.
+     - Syntax :- SELECT SQRT(number);
+ - RAND() :-
+     - Returns a random decimal number between 0 and 1.
+     -  Syntax :- SELECT RAND();
+ - CONTACT() :-
+     - Joins (concatenates) two or more strings into one.
+     - Syntax :- SELECT CONCAT(string1, string2, ...) AS full_text;
+
 
 
 
