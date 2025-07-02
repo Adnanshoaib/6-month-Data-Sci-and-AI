@@ -83,6 +83,18 @@ SQL has many built-in functions for performing processing on string or numeric d
  - CONTACT() :-
      - Joins (concatenates) two or more strings into one.
      - Syntax :- SELECT CONCAT(string1, string2, ...) AS full_text;
+# SQL WildCard :- 
+Wildcards are special characters used in SQL with the LIKE operator to search for data that matches a pattern — instead of exact value.
+
+ -  LIKE :- 
+
+      - The LIKE operator is used to compare a value to similar values using wildcard operators. 
+
+   1) (%) ==>  Use % for flexible match
+   2) (_) ==>  Use _ for fixed character match
+
+
+
 
 
 
