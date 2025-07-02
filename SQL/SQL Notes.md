@@ -101,10 +101,24 @@ Wildcards are special characters used in SQL with the LIKE operator to search fo
  The SQL Joins clause is used to combine records from two or more tables in a database.
  A JOIN is a means for combining fields from two tables by using values common to each. 
  
-  - Inner Join :-
+  - INNER JOIN :-
      - returns rows when there is a match in both tables.
      - The most frequently used and important of the joins is the INNER JOIN. They are also referred to as an EQUIJOIN. 
      - Syntax :- SELECT * FROM table1 INNER JOIN table2 ON table1.common_column = table2.common_column;
+  - LEFT JOIN :-
+     - Returns all rows from the left table, and matched rows from the right table. If no match, shows NULL.
+     - Syntax :- SELECT * FROM table1 LEFT JOIN table2 ON table1.common_column = table2.common_column;
+  - RIGHT JOIN :-
+     - Returns all rows from the right table, and matched rows from the left table. If no match, shows NULL.
+     - Syntax :- SELECT * FROM table1 RIGHT JOIN table2 ON table1.common_column = table2.common_column;
+  - CROSS JOIN :-
+     - Returns the Cartesian product of two tables: every row of the first table is joined with every row of the second.
+     - Syntax :- SELECT * FROM table1 CROSS JOIN table2;
+
+
+
+
+       
 
          
  
