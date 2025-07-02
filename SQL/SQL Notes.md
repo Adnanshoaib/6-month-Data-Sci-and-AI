@@ -100,6 +100,7 @@ Wildcards are special characters used in SQL with the LIKE operator to search fo
 # Joins :-
  The SQL Joins clause is used to combine records from two or more tables in a database.
  A JOIN is a means for combining fields from two tables by using values common to each. 
+ 
     - Inner Join :-
          - returns rows when there is a match in both tables.
          - The most frequently used and important of the joins is the INNER JOIN. They are also referred to as an EQUIJOIN. 
