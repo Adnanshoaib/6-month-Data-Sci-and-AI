@@ -97,6 +97,17 @@ Wildcards are special characters used in SQL with the LIKE operator to search fo
        - When you want to match exactly one character at a specific position.
        - Syntax :- SELECT * FROM students WHERE name LIKE '_d';
                      ( Second letter is "d" )
+# Joins :-
+ The SQL Joins clause is used to combine records from two or more tables in a database.
+ A JOIN is a means for combining fields from two tables by using values common to each. 
+    - Inner Join :-
+         - returns rows when there is a match in both tables.
+         - The most frequently used and important of the joins is the INNER JOIN. They are also referred to as an EQUIJOIN. 
+         - Syntax :- SELECT * FROM table1 INNER JOIN table2 ON table1.common_column = table2.common_column;
+
+         
+ 
+
 
 
 
