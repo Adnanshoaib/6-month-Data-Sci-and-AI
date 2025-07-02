@@ -90,13 +90,13 @@ Wildcards are special characters used in SQL with the LIKE operator to search fo
        - The LIKE operator is used to compare a value to similar values using wildcard operators.
          
    - % ==>  wildcard matches zero or more characters.
-   - When you want to match part of a string (starting, ending, or containing something)
-   - Syntac :- SELECT * FROM students WHERE name LIKE 'A%';
-              ( Name starts with "A" )
+       - When you want to match part of a string (starting, ending, or containing something)
+       - Syntac :- SELECT * FROM students WHERE name LIKE 'A%';
+                    ( Name starts with "A" )
    - _ ==>  wildcard matches exactly one character.
-   - When you want to match exactly one character at a specific position.
-   - Syntax :- SELECT * FROM students WHERE name LIKE '_d';
-               ( Second letter is "d" )
+       - When you want to match exactly one character at a specific position.
+       - Syntax :- SELECT * FROM students WHERE name LIKE '_d';
+                     ( Second letter is "d" )
 
 
 
