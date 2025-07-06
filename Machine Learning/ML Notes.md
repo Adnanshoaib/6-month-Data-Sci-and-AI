@@ -10,6 +10,10 @@ It’s like giving examples (data) to a computer, and it learns patterns from th
   - Unstructured Data :-
       - Not organized in table format (like images, audio, text).
       - Mostly used in AI applications.
+# How Machine Learns the Data :-
+  - Training Phase – Model learns from historical data
+  - Testing Phase – Model is tested on unseen data
+  - Validation Phase – Optional step to tune the model using a small portion of future-like data (validation data)
 
 
 
