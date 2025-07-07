@@ -30,6 +30,22 @@ It’s like giving examples (data) to a computer, and it learns patterns from th
       - Flow :-
           - Data + Output (Labels) ⇒ Model (Learns Rules)
       - Who learns rules? Machine (algorithm)
+# AL vs ML vs DL :-
+  - AI :-
+      - Artificial Intelligence is the big umbrella –– it's the science of making machines smart, just like humans.
+      - Ex :-
+          - Playing chess like a human (AI)
+          - Talking to Alexa (AI)
+  - ML :-
+      - Machine Learning  is a subset of Artificial Intelligence –– this is where machines learn from data & improve over time.
+      - Ex :-
+          - YouTube recommending videos
+          - Gmail filtering spam
+  - DL :-
+      - Deep Learning is a subset of Machine Learning –– it uses something called neural network , which are inspired by the human brain.
+      - Ex :-
+          - Face recognition on phones
+          - self-driving car vision 
 
 
 
