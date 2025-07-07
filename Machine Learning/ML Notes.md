@@ -18,7 +18,23 @@ It’s like giving examples (data) to a computer, and it learns patterns from th
   - YouTube Recommendations – Learn from your watch history.
   - Spam Detection in Gmail – Learn patterns in spam emails.
   - Voice Assistants( Siri,Alexa ) – Learn how you speak.
-  - Face Unlock on Phones – Learn to recognize your face.  
+  - Face Unlock on Phones – Learn to recognize your face.
+# Difference btw Traditional Programming & Machine Learning :-
+  - Traditional Programming :-
+      - In traditional programming, a programmer writes rules (logic) and inputs data to get the output.
+      - Flow:
+        Rules (Logic) + Data ⇒ Output
+      - Who writes rules? Human (programmer)
+  -  Machine Learning :-
+      - In ML, we provide the machine with data and the correct output (labels), and it learns the rules by itself.
+      - Flow:
+        Data + Output (Labels) ⇒ Model (Learns Rules)
+      - Who learns rules? Machine (algorithm)
+
+
+
+
+
 
 
 
