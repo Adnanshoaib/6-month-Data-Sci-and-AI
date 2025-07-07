@@ -14,6 +14,11 @@ It’s like giving examples (data) to a computer, and it learns patterns from th
   - Training Phase – Model learns from historical data
   - Testing Phase – Model is tested on unseen data
   - Validation Phase – Optional step to tune the model using a small portion of future-like data (validation data)
+# Real life machine learning applications :-
+  - YouTube Recommendations – Learn from your watch history.
+  - Spam Detection in Gmail – Learn patterns in spam emails.
+  - Voice Assistants( Siri,Alexa ) – Learn how you speak.
+  - Face Unlock on Phones – Learn to recognize your face.  
 
 
 
