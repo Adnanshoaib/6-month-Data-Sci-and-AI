@@ -22,13 +22,13 @@ It’s like giving examples (data) to a computer, and it learns patterns from th
 # Difference btw Traditional Programming & Machine Learning :-
   - Traditional Programming :-
       - In traditional programming, a programmer writes rules (logic) and inputs data to get the output.
-      - Flow:
-        Rules (Logic) + Data ⇒ Output
+      - Flow :-
+          - Rules (Logic) + Data ⇒ Output
       - Who writes rules? Human (programmer)
   -  Machine Learning :-
       - In ML, we provide the machine with data and the correct output (labels), and it learns the rules by itself.
-      - Flow:
-        Data + Output (Labels) ⇒ Model (Learns Rules)
+      - Flow :-
+          - Data + Output (Labels) ⇒ Model (Learns Rules)
       - Who learns rules? Machine (algorithm)
 
 
