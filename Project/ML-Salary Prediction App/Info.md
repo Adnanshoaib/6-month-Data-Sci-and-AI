@@ -8,12 +8,11 @@
   - 🌐 Streamlit for an interactive and minimal UI
 
 #  Features
-  - User inputs years of experience
-  - Predicts salary in real-time
-  - Shows clean and readable output
-  - Trained on real-world salary dataset
-  -  Deployed as a simple web application
-  -  
+  ✅ User inputs years of experience
+  ✅ Predicts salary in real-time
+  ✅ Shows clean and readable output
+  ✅ Trained on real-world salary dataset
+  ✅  Deployed as a simple web application
 # Actual Work :-
 This project uses a Simple Linear Regression algorithm to predict salary based on the number of years of experience provided by the user.
 # How It Works :-
