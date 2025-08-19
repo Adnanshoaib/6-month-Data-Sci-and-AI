@@ -3,11 +3,11 @@ This project predicts house prices using multiple regression algorithms and comp
 
 # 🔑 Key Features
 
-  ✅ Multiple regression algorithms implemented & compared
-  ✅ Model evaluation with MAE, MSE, R²
-  ✅ Trained models saved using Pickle
-  ✅ Results stored in model_evaluation_results.csv
-  ✅ Deployable in a web app for real-time predictions
+  - ✅ Multiple regression algorithms implemented & compared
+  - ✅ Model evaluation with MAE, MSE, R²
+  - ✅ Trained models saved using Pickle
+  - ✅ Results stored in model_evaluation_results.csv
+  - ✅ Deployable in a web app for real-time predictions
 
 # 🛠 Tech Stack
 
@@ -34,3 +34,7 @@ This project predicts house prices using multiple regression algorithms and comp
   - Each model was evaluated using MAE, MSE, and R² Score
   - Results are stored in: model_evaluation_results.csv
   - Best performing models can be selected for deployment
+
+# 📌 Outcome:
+
+A fully functional AI-powered House Price Predictor App that provides accurate price predictions and helps compare multiple regression models for performance.
