@@ -15,7 +15,7 @@
 ## 🔹 What is NLU?
 **NLU (Natural Language Understanding)** is a part of NLP focused on understanding the meaning and intent behind text or speech.
 
-### Example:
+- Example:
 - "Book a flight to Delhi" → intent: booking, entity: Delhi
 
 ---
@@ -23,7 +23,7 @@
 ## 🔹 What is NLG?
 **NLG (Natural Language Generation)** is the ability of a computer to generate human-like language from structured data.
 
-### Example:
+- Example:
 - Input: Weather data → Output: "Today it will be sunny with a high of 30°C."
 
 ---
