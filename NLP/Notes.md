@@ -23,9 +23,6 @@
 ## 🔹 What is NLG?
 **NLG (Natural Language Generation)** is the ability of a computer to generate human-like language from structured data.
 
----
-
-
 - Example:
   - Input: Weather data → Output: "Today it will be sunny with a high of 30°C."
 
