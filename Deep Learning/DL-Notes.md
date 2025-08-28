@@ -21,17 +21,14 @@ Deep Learning (DL) is a subset of Machine Learning (ML) that uses Artificial Neu
 - Repeat (Epochs) until the model converges.
 
 # Key Concepts in Deep Learning
-
 Neuron: Basic unit, takes input, applies weight + bias, passes through activation function.
 
 - Layer Types :-
   - Input Layer: Raw data enters.
   - Hidden Layers: Learn patterns.
   - Output Layer: Gives prediction.
-
 - Activation Functions:
   - Sigmoid, Tanh, ReLU, Softmax.
-
 - Loss Functions:
   - Cross-Entropy, MSE (Mean Squared Error).
 - Optimization:
