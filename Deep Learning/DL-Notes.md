@@ -43,6 +43,16 @@ Neural Networks come in many different architectures, each designed to solve a s
   - Consists of Input Layer → Hidden Layers → Output Layer.
   - Data flows only in one direction (Forward Propagation).
   - Commonly used for tabular/structured data.
-    - Applications: Customer churn prediction, fraud detection, credit scoring.
+    - Applications :-  Customer churn prediction, fraud detection, credit scoring.
 
-  
+- Convolutional Neural Network (CNN) :-
+  - Specialized for images and videos.
+  - Uses convolutional layers to extract spatial features (edges, shapes, textures).
+  - Architecture: Convolution → ReLU → Pooling → Fully Connected Layers.
+    -  Applications :- Image classification, object detection, self-driving cars, face recognition.
+   
+- Recurrent Neural Network (RNN) :-
+  - Designed for sequential data (time-series, text, speech).
+  - Maintains memory of previous inputs to influence future outputs.
+  - Suffers from the Vanishing Gradient Problem → solved by LSTM and GRU.
+    -  Applications :- Stock price prediction, text generation, speech recognition.
