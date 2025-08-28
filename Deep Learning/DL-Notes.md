@@ -43,6 +43,6 @@ Neural Networks come in many different architectures, each designed to solve a s
   - Consists of Input Layer → Hidden Layers → Output Layer.
   - Data flows only in one direction (Forward Propagation).
   - Commonly used for tabular/structured data.
-  - Applications: Customer churn prediction, fraud detection, credit scoring.
+    - Applications: Customer churn prediction, fraud detection, credit scoring.
 
   
