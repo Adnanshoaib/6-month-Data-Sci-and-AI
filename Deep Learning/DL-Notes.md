@@ -13,9 +13,26 @@ Deep Learning (DL) is a subset of Machine Learning (ML) that uses Artificial Neu
 
 # Basic Workflow of Deep Learning
 
-Input Data → Images, Text, Audio, or Numerical data.
-Forward Propagation → Data flows through layers, prediction is made.
-Loss Calculation → Compare prediction with actual value.
-Backward Propagation (Backprop) → Error sent backwards to update weights.
-Optimization → Use algorithms like Gradient Descent & Adam Optimizer.
-Repeat (Epochs) until the model converges.
+- Input Data → Images, Text, Audio, or Numerical data.
+- Forward Propagation → Data flows through layers, prediction is made.
+- Loss Calculation → Compare prediction with actual value.
+- Backward Propagation (Backprop) → Error sent backwards to update weights.
+- Optimization → Use algorithms like Gradient Descent & Adam Optimizer.
+- Repeat (Epochs) until the model converges.
+
+# Key Concepts in Deep Learning
+
+Neuron: Basic unit, takes input, applies weight + bias, passes through activation function.
+
+- Layer Types :-
+  - Input Layer: Raw data enters.
+  - Hidden Layers: Learn patterns.
+  - Output Layer: Gives prediction.
+
+- Activation Functions:
+  - Sigmoid, Tanh, ReLU, Softmax.
+
+- Loss Functions:
+  - Cross-Entropy, MSE (Mean Squared Error).
+- Optimization:
+  - Gradient Descent, Adam, RMSprop.
