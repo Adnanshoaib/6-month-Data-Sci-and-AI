@@ -33,3 +33,16 @@ Neuron: Basic unit, takes input, applies weight + bias, passes through activatio
   - Cross-Entropy, MSE (Mean Squared Error).
 - Optimization:
   - Gradient Descent, Adam, RMSprop.
+
+# Types of Neural Networks in Deep Learning
+
+Neural Networks come in many different architectures, each designed to solve a specific type of problem.
+
+- Artificial Neural Network (ANN) :-
+  - The most basic type of neural network.
+  - Consists of Input Layer → Hidden Layers → Output Layer.
+  - Data flows only in one direction (Forward Propagation).
+  - Commonly used for tabular/structured data.
+  - Applications: Customer churn prediction, fraud detection, credit scoring.
+
+  
